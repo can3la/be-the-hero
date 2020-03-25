@@ -23,7 +23,18 @@ Aplicação desenvolvida com intuito de fornecer mídia e ajuda financeira para 
 
 - Web:
 
+  - Página de autenticação:
+  
 ![Página de autenticação](./web/screenshots/LogOn.png)
+
+  - Página de cadastro
+
 ![Página de cadastro](./web/screenshots/Register.png)
+
+  - Página de perfil
+
 ![Página de perfil](./web/screenshots/Profile.png)
+
+  - Página de inclusão de novos incidentes
+
 ![Página de inclusão de novos incidentes](./web/screenshots/NewIncident.png)  
