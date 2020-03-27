@@ -23,7 +23,6 @@ export default function Incidents() {
 
     async function loadIncidents() {
         if (loading) return;
-        if (total > 0 && incidents.length === total) return;
 
         setLoading(true);
 
