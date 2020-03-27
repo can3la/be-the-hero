@@ -4,7 +4,7 @@ module.exports = {
     async index(request, response) {
         const { page = 1 } = request.query;
         
-        const limit = 4
+        const limit = 8
         const incidents = await connection('incidents').join(
             'ngos', 'ngos.id', '=', 'incidents.id_ngo'
         ).limit(limit).offset((page - 1) * limit).select([

@@ -1,4 +1,4 @@
-// Update with your config settings.
+require('dotenv').config();
 
 module.exports = {
 
@@ -14,11 +14,11 @@ module.exports = {
   },
 
   staging: {
-    client: 'postgresql',
+    client: process.env.DB_CLIENT,
     connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
+      database: process.env.DB_NAME,
+      user: process.env.DB_USER,
+      password: process.env.DB_PASSWORD
     },
     pool: {
       min: 2,
@@ -30,11 +30,11 @@ module.exports = {
   },
 
   production: {
-    client: 'postgresql',
+    client: process.env.DB_CLIENT,
     connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'password'
+      database: process.env.DB_NAME,
+      user: process.env.DB_USER,
+      password: process.env.DB_PASSWORD
     },
     pool: {
       min: 2,

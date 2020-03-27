@@ -3,3 +3,6 @@
 
 #database
 **.sqlite
+
+#config
+.env
